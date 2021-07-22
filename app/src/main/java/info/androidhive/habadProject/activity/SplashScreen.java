@@ -21,7 +21,7 @@ import com.az.igrot.hakodesh.R;
 
 public class SplashScreen extends AppCompatActivity {
 
-
+    //get the hebrew date JSON
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,7 +101,7 @@ public class SplashScreen extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String args) {
-
+                // put the date on screen
                 PD.dismiss();
                 Intent in = new Intent(getApplicationContext(), MainClass.class);
                 startActivity(in);
