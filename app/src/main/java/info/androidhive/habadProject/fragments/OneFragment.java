@@ -182,7 +182,7 @@ public class OneFragment extends Fragment {
 
         try {
 
-            igeretContent =new AsyncBook().execute("https://www.drone-programming.online/api.php?" + "bookId=" + bookId + "&volumeId=" + volumeId).get();
+            igeretContent =new AsyncBook().execute("My http url").get();
             setText(igeretContent);
         } catch (InterruptedException e) {
             e.printStackTrace();
