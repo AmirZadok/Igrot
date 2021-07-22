@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-
+//get the letters as aSyncTask to show on screen
 public class AsyncBook extends AsyncTask<String, String, String> {
 
     ProgressDialog nDialog;
