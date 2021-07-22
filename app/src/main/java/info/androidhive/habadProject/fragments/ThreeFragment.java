@@ -132,7 +132,7 @@ public class ThreeFragment extends Fragment {
 
         try {
 
-            igeretContent = new AsyncBook().execute("https://drone-programming.online/api.php?" + "bookId=" + bookId + "&volumeId=" + volumeId).get();
+            igeretContent = new AsyncBook().execute("HTTP Request to my server").get();
 
             setText(igeretContent);
         } catch (InterruptedException e) {
