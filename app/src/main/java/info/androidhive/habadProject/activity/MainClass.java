@@ -18,7 +18,7 @@ public class MainClass extends AppCompatActivity {
     private ViewPager viewPager;
     static TextView dateTextview;
     static String currentDate;
-    private int[] tabIcons = {
+    private int[] tabIcons = {                 //the images shows on the tabs of each fragment
             R.drawable.ic_tab_favourite,
             R.drawable.all,
             R.drawable.random
@@ -48,13 +48,13 @@ public class MainClass extends AppCompatActivity {
 
     }
 
-
+       
     private void setupTabIcons() {
         tabLayout.getTabAt(0).setIcon(tabIcons[1]);
         tabLayout.getTabAt(1).setIcon(tabIcons[0]);
         tabLayout.getTabAt(2).setIcon(tabIcons[2]);
     }
-
+    //add fragments to the tab menu.
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new OneFragment(), "כל האגרות");
